@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --color-gray-10: #101828;
+    --color-gray-20: #667085;
+    --color-gray-30: #98A2B3;
+    --color-gray-40: #D0D5DD;
+
+    --color-red-10: #8E2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    font-size: 16px;
+    color: var(--color-gray-20);
+}
+
+a:active, a {
+    text-decoration: none;
+    color: var(--color-gray-20);
+}
+
+
+#container {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+header {
+    padding: 16px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+}
+
+#menu_navegacao ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+}
+
+#menu_navegacao ul a {
+    font-weight: 500;
+}
+
+#login a {
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+#login a#cadastrar {
+    background-color: var(--color-red-10);
+    color: #FFF;
+    transition: all 0.5s;
+}
+
+#login a#cadastrar:hover {
+    background-color: #c23131;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+}
+
+/* SOBRE NÓS */
+
+#sobre__nos {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+}
+
+#sobre__nos span {
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--color-red-10);
+}
+
+#sobre__nos h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+    color: var(--color-gray-10);
+}
+
+#sobre__nos p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-gray-20);
+}
+
+/* MÉTRICAS */
+
+#metricas {
+    padding-bottom: 96px;
+}
+
+#metricas #metricas__container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.box-dados {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-dados h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+    color: var(--color-red-10);
+}
+
+.box-dados span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--color-gray-10);
+    margin-top: 12px;
+}
+
+.box-dados p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-gray-20);
+    margin-top: 8px;
+}
+
+/* VAGAS ABERTAS */
+
+#vagas__abertas {
+    padding: 96px 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#vagas__abertas span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-red-10);
+}
+
+#vagas__abertas h2 {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    color: var(--color-gray-10);
+}
+
+#vagas__abertas p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-gray-20);
+}
+
+#vagas__abertas img {
+    object-fit: cover;
+    padding-top: 64px;
+}
+
+/* VAGAS */
+
+#container__vagas {
+    margin: 0 236px;
+}
+
+.categoria__vaga {
+    margin: 0 0 64px 0;
+}
+
+.categoria__vaga .categoria {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-gray-10);
+}
+
+.container-box-vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.box-vagas {
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    transition: all 0.5s;
+}
+
+.box-vagas:hover {
+    border: 1px solid var(--color-red-10);
+    cursor: pointer;
+}
+
+.box-vagas h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--color-gray-10);
+}
+
+.box-vagas div {
+    display: flex;
+    gap: 24px;
+}
+
+/* COLABORADORES */
+
+#colaboradores {
+    padding-bottom: 96px;
+}
+
+#container__colaboradores {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    
+}
+
+#container__colaboradores span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-red-10);
+}
+
+#container__colaboradores h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    color: var(--color-gray-10);
+}
+
+#container__colaboradores h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 4px;
+    color: var(--color-gray-10);
+}
+
+#container__colaboradores p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-gray-20);
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 96px 0;
+}
+
+#container__rodape {
+    width: 77%;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container__rodape h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    color: var(--color-gray-10);
+    margin-bottom: 20px;
+}
+
+#container__rodape span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+#container__rodape div {
+    display: flex;
+    gap: 16px;
+}
+
+input {
+    padding: 12px 14px;
+    width: 330px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--color-gray-40);
+    transition: all 0.5s;
+}
+
+input:hover {
+    border: 1px solid var(--color-red-10);
+    
+}
+
+input:focus {
+    outline: 1px solid var(--color-red-10);
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFF;
+    background-color: var(--color-red-10);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #c23131;
+}
+
+#container__rodape p {
+    margin-top: 32px;
+}
+
+
+
